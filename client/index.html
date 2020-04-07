@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <title>SignalR Tests</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style.css" rel="stylesheet">
+    <script src="./dist/browser/signalr.js"></script>
+</head>
+<html>
+
+<body>
+    <div class="main-container">
+        <h2 class="title">Results</h2>
+        <div id="output">
+            <div class="output">
+                <div class="label">Transport</div>
+                <div class="label">Block size</div>
+                <div class="label">Calls</div>
+                <div class="label">Bytes loaded</div>
+                <div class="label">Time</div>
+                <div class="label">Progress</div>
+            </div>
+            <div class="delimiter"></div>
+        </div>
+        <div class="column-container">
+            <h3 class="title">Input data</h3>
+            <div class="row-container">
+                <div class="label">Transport type</div>
+                <div class="input">
+                    <select id="inputTransport">
+                        <option value="websockets">websockets</option>
+                        <option value="longpolling">long polling</option>
+                        <option value="serversentevents">server sent events</option>
+                        <option value="all">all at once</option>
+                    </select>
+                </div>
+                <div class="label">Block size</div>
+                <div class="input"><input type="text" id="inputBlockSize" value=1000 /></div>
+                <div class="label">Number of calls</div>
+                <div class="input">
+                    <select id="inputNumberOfCalls">
+                        <option value="100">100</option>
+                        <option value="1000">1000</option>
+                        <option value="10000">10000</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <input type="button" id="btnRun" value="Run Test" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./tests.js"></script>
+
+</body>
+</html>

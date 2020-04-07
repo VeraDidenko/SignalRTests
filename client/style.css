@@ -1,0 +1,135 @@
+.main-container {
+  margin-top: 200px;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.column-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  padding: 15px;
+  -webkit-box-shadow: 0px 4px 5px -1px rgba(163, 163, 163, 1);
+  -moz-box-shadow: 0px 4px 5px -1px rgba(163, 163, 163, 1);
+  box-shadow: 0px 4px 5px -1px rgba(163, 163, 163, 1);
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row-container>div {
+  margin: 10px;
+}
+
+.output {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 150px 75px 75px 100px 100px 300px;
+  grid-gap: 10px;
+  margin: 10px;
+}
+
+.delimiter {
+  border-bottom: 1px dashed #A0A0A0;
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
+
+.progress {
+  display: inline-block;
+  text-align: center;
+  background-color: #7CB342;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.label {
+  height: 30px;
+  line-height: 30px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #7CB342;
+}
+
+.error {
+  color: #E52A3A;
+}
+
+input {
+  width: 100%;
+  max-height: 30px;
+  font-size: 100%;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: white;
+  border: 1px solid #A0A0A0;
+  border-radius: 2px;
+  color: black;
+  appearance: none;
+  padding: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type=button] {
+  background-color: #7CB342;
+  text-transform: uppercase;
+}
+
+select {
+  width: 100%;
+  height: 30px;
+  font-size: 100%;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: white;
+  border: 1px solid #A0A0A0;
+  border-radius: 2px;
+  color: black;
+  appearance: none;
+  padding: 5px;
+  padding-right: 38px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+
+/* For IE <= 11 */
+select::-ms-expand {
+  display: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+input[type=text]:hover,
+input[type=text]:focus {
+  background-color: #FFFFD1;
+  outline: none;
+
+}
+
+input[type=button]:hover,
+input[type=button]:focus {
+  outline: none;
+  color: white;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
